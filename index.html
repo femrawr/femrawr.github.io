@@ -6,7 +6,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <meta property="og:title" content="femrawr :3">
+        <meta property="og:description" content="The cutest developer :3">
+        <meta property="og:image" content="https://femrawr.github.io/assets/site/meta-img.jpg">
+        <meta property="og:url" content="https://femrawr.github.io/">
+        <meta property="og:type" content="website">
+
         <link rel="stylesheet" href="style/the-top.css">
+        <link rel="icon" href="assets/site/favico.ico" type="image/png">
 
         <title>femrawr :3</title>
 
@@ -25,6 +32,7 @@
                 line-height: 1.6;
                 overflow-x: hidden;
                 user-select: none;
+                scrollbar-width: 0.1px;
             }
 
         </style>
@@ -38,7 +46,7 @@
 
                 <div class="pfp">
 
-                    <img src="assets/icons/kanaria.jpg" class="pfp-img">
+                    <img src="assets/main/kanaria.jpg" class="pfp-img">
 
                 </div>
 
@@ -60,21 +68,23 @@
 
             <div class="langs-icons">
 
-                <img src="assets/icons/golang.svg" alt="Golang" title="Golang" class="langs-go">
-                <img src="assets/icons/lua.svg" alt="Luau" title="Luau" class="langs-lua">
-                <img src="assets/icons/javascript.svg" alt="Javascript" title="Javascript" class="langs-js">
-                <img src="assets/icons/cpp.svg" alt="C++" title="C++" class="langs-cpp">
-                <img src="assets/icons/rust.svg" alt="Rust" title="Rust" class="langs-rust">
+                <img src="assets/main/golang.svg" alt="Golang" title="Golang" class="langs-go">
+                <img src="assets/main/lua.svg" alt="Luau" title="Luau" class="langs-lua">
+                <img src="assets/main/javascript.svg" alt="Javascript" title="Javascript" class="langs-js">
+                <img src="assets/main/cpp.svg" alt="C++" title="C++" class="langs-cpp">
+                <img src="assets/main/rust.svg" alt="Rust" title="Rust" class="langs-rust">
 
             </div>
 
         </section>
 
-
-
     </body>
 
     <script>
+
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+        });
 
         console.log('woooo');
 

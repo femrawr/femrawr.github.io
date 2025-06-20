@@ -37,6 +37,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    -webkit-user-drag: none;
 }
 
 .pfp:hover {
@@ -93,6 +94,7 @@
     height: 40px;
     transition: transform 0.3s ease, filter 0.3s ease;
     filter: brightness(0) invert(1);
+    -webkit-user-drag: none;
 }
 
 .langs-icons img:hover {
