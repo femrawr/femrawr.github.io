@@ -1,13 +1,14 @@
 .the-top {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     position: relative;
     background: #000000;
+    padding-bottom: 2rem;
 }
 
 .pfp-container {

@@ -12,12 +12,12 @@
         <meta property="og:type" content="website">
 
         <link rel="stylesheet" href="style/the-top.css">
+        <link rel="stylesheet" href="style/projects.css">
         <link rel="icon" href="assets/site/favico.ico" type="image/png">
 
         <title>femrawr :3</title>
 
         <style>
-
             * {
                 margin: 0;
                 padding: 0;
@@ -34,6 +34,27 @@
                 scrollbar-width: 0.1px;
             }
 
+            ::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #000;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #dc2626;
+                border-radius: 6px;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #ef4444;
+            }
+
+            html {
+                scrollbar-width: thin;
+                scrollbar-color: #dc2626 #000;
+            }
         </style>
     </head>
 
@@ -64,15 +85,61 @@
                 <img src="assets/main/cs.svg" alt="C#" title="C#" class="langs-cs">
             </div>
         </section>
+
+        <section class="projects">
+            <h2 class="projects-main-title">Featured Projects</h2>
+            
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-img" style="background-image: url('assets/main/proj-kgp.png');">
+                        <div class="project-img-glow"></div>
+                    </div>
+
+                    <div class="project-main">
+                        <h3 class="project-title">
+                            <a href="https://github.com/femrawr/KindaGoodPrivacy" target="_blank">Kinda Good Privacy</a>
+                        </h3>
+
+                        <p class="profile-desc">A simple encrypted text and image store app made with security in mind.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img" style="background-image: url('assets/main/proj-bca.png');">
+                        <div class="project-img-glow"></div>
+                    </div>
+
+                    <div class="project-main">
+                        <h3 class="project-title">
+                            <a href="https://github.com/femrawr/BetterChatAve" target="_blank">Better Chat Avenue</a>
+                        </h3>
+
+                        <p class="profile-desc">A tampermonkey script to make chatting sites like chat avenue abit better.</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img" style="background-image: url('assets/main/prof-ama.png');">
+                        <div class="project-img-glow"></div>
+                    </div>
+
+                    <div class="project-main">
+                        <h3 class="project-title">
+                            <a href="https://github.com/femrawr/Amanitin" target="_blank">Amanitin</a>
+                        </h3>
+
+                        <p class="profile-desc">A secure and fast file protector for Windows made in rust.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 
     <script>
-
         document.addEventListener('contextmenu', (e) => {
             e.preventDefault();
         });
 
         console.log('woooo');
-
     </script>
 </html>

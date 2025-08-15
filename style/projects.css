@@ -1,0 +1,85 @@
+.projects {
+    padding: 1rem 2rem;
+    background: #000;
+}
+
+.projects-main-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 360;
+    margin-bottom: 2rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project {
+    background: #1a1a1a;
+    border-radius: 20px;
+    border: 1px solid #dc2626;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-img {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+}
+
+.project-img .project-img-glow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    transition: opacity 0.2s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.05);
+}
+
+.project-img:hover .project-img-glow {
+    opacity: 0;
+}
+
+.project-main {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-title a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.project-title a:hover {
+    color: #dc2626;
+    text-shadow: 0 0 8px #dc2626, 0 0 16px #dc2626;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: #ccc;
+    flex: 1;
+    margin-bottom: 1rem;
+}
