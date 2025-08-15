@@ -55,6 +55,26 @@
                 scrollbar-width: thin;
                 scrollbar-color: #dc2626 #000;
             }
+
+            @media (max-width: 768px) {
+                body {
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                }
+                
+                body::-webkit-scrollbar {
+                    display: none;
+                }
+                
+                html {
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+                }
+                
+                html::-webkit-scrollbar {
+                    display: none;
+                }
+            }
         </style>
     </head>
 
